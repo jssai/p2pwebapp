@@ -16,6 +16,6 @@ Here are a few highlights to look out for in this boilerplate
 ## Quick start
 
 1. Clone this repo using `git clone https://github.com/rvasoya/react-quickstart.git`
-2. Move to the appropriate directory: `cd react-quickstart`.<br />
+2. Move to the appropriate directory: `cd p2pwebapp`.<br />
 3. Run `yarn` or `npm install` to install dependencies.<br />
 4. Run `npm start` to see the example app at `http://localhost:3000`.
