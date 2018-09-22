@@ -1,0 +1,101 @@
+@import 'styles/mixins.scss';
+
+.accordion {
+    .accordion__item:last-child {
+      .accordion__title {
+        border-bottom: none;
+      }
+    }
+    .accordion__title {
+        color: black;
+        cursor: pointer;
+        padding: 20px 10px 20px 20px;
+        text-align: left;
+        border: none;
+        display: flex;
+        border-bottom: 1px solid #999;
+
+        @include respond-below(md) {
+          padding: 15px;
+        }
+        @include respond-below(xs) {
+          font-size: 14px;
+          padding: 10px;
+        }
+
+        &:focus {
+          outline: none;
+        }
+
+        &:hover {
+          background-color: #fff;
+        }
+
+        span:first-child{
+          flex-grow: 1
+        }
+        span.accordion__arrow{
+          @include noselect()
+          position: relative;
+          justify-content: center;
+          align-items:center;
+          width: 30px;
+          font-size: 25px;
+          font-weight: 500;
+        }
+        &[aria-selected='true'] {
+            border-bottom: none;
+            background-color: #f1f1f1;
+            .accordion__arrow[aria-expanded='true'] {
+              display: none;
+            }
+            .accordion__arrow[aria-expanded='false'] {
+              display: flex;
+            } 
+        }
+        &[aria-selected='false'] {
+            .accordion__arrow[aria-expanded='true'] {
+              display: flex;
+            }
+            .accordion__arrow[aria-expanded='false'] {
+              display: none;
+            } 
+        }
+    }
+    .accordion__body {
+        padding: 20px;
+        display: block;
+        animation: fadein 0.35s ease-in;
+        border-bottom: 1px solid #999;
+        @include respond-below(md) {
+          padding: 15px;
+        }
+        @include respond-below(xs) {
+          font-size: 14px;
+          padding: 10px;
+        }
+    }
+    .accordion__body--hidden {
+        display: none;
+        opacity: 0;
+        animation: fadein 0.35s ease-in;
+    }
+    .accordion__title > *:last-child,
+    .accordion__body > *:last-child {
+        margin-bottom: 0;
+    }
+    /* -------------------------------------------------- */
+    /* ---------------- Animation part ------------------ */
+    /* -------------------------------------------------- */
+
+    @keyframes fadein {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
+

@@ -1,0 +1,57 @@
+import android from './GooglePlay.png';
+import ios from './AppStore.png';
+import world from './World.png';
+import flag from './UK.png';
+import smiley from './Smiley.png';
+import redCar from './Car.png';
+import sun from './Sun.png';
+import umbrella from './Umb.png';
+import plane from './Plane.png';
+import laptop from './Laptop.png';
+import family from './Icon_1.png';
+import callWild from './Icon_2.png';
+import roadTrip from './Icon_3.png';
+import buyer from './Icon_4.png';
+import mover from './Icon_5.png';
+import impressionist from './Icon_6.png';
+import howto1 from './Icon_7.png';
+import howto2 from './Icon_8.png';
+import howto3 from './Icon_9.png';
+import howto4 from './Icon_10.png';
+import howto5 from './Icon_11.png';
+import howto6 from './Icon_12.png';
+// import  from './.png';
+
+export default {
+  android,
+  ios,
+  world,
+  flag,
+  smiley,
+  redCar,
+  sun,
+  umbrella,
+  plane,
+  laptop,
+  renter: {
+    i: family,
+    ii: callWild,
+    iii: roadTrip,
+    iv: buyer,
+    v: mover,
+    vi: impressionist
+  },
+  owner: {
+    i: buyer,
+    ii: mover,
+    iii: impressionist
+  },
+  howto: {
+    i: howto1,
+    ii: howto2,
+    iii: howto3,
+    iv: howto4,
+    v: howto5,
+    vi: howto6
+  }
+};

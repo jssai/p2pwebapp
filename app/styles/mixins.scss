@@ -1,0 +1,41 @@
+@import 'styles/color.scss';
+@import 'styles/_media-queries.scss';
+
+@mixin noselect() {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+@mixin link() {
+  color: unset;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    text-decoration: none;
+    background-color: $bg-white;
+  }
+}
+
+@mixin blogLink(){
+	color: unset;
+	text-decoration: none;
+	border: 1px solid $bg-banner;
+	background-color: $bg-banner;
+	color: white;
+	width: 100%;
+	max-width: 150px;
+	padding: 5px 15px;
+	border-radius: 30px;
+	transition: all 0.3s ease-in-out;
+	&:hover {
+		color: black;
+		background-color: white;
+	}
+}

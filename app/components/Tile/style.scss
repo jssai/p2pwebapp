@@ -1,0 +1,47 @@
+@import 'styles/mixins.scss';
+
+.home-page {
+  .tile {
+    margin: 0 3em;
+    text-align: center;
+    @include respond-below(sm) {
+      margin: 0 1em;
+    }
+    .tile-header {
+      margin: 0 2em;
+      font-weight: bold;
+      color: black;
+      line-height: 1.3em;
+      min-height: 65px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include respond-below(lg) {
+        margin: 0 1em;
+      }
+      @include respond-below(sm) {
+        margin: 0 0.5em;
+        font-size: 18px;
+        min-height: 60px;
+      }
+    }
+
+    .tile-image {
+      margin: 1em 1em 2em 1em;
+      height: 150px;
+      width: 150px;
+    }
+
+    .tile-description {
+      color: black;
+      margin: 0 0.5em;
+      font-size: 1.2em;
+      line-height: 1.3em;
+      margin-bottom: 3em;
+      @include respond-below(md) {
+        margin-bottom: 1.5em;
+        font-size: 1em;
+      }
+    }
+  }
+}
