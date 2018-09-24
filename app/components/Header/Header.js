@@ -4,6 +4,7 @@ import { FormattedMessage, defineMessages } from 'react-intl';
 import Images from 'images';
 import scrollToElement from 'scroll-to-element';
 import { connect } from 'react-redux';
+import ScrollToTop from 'components/ScrollToTop';
 import { createSelector } from 'reselect';
 import { changeLocale } from 'containers/LanguageProvider/actions';
 import { makeSelectLocale } from 'containers/LanguageProvider/selectors';
@@ -42,6 +43,7 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
   render() {
     return (
       <header className="header">
+        <ScrollToTop />
         <div className="container">
           <div className="logo">
             <a href="/">
@@ -56,7 +58,7 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
                     src={Images.flag}
                     alt="flag"
                     onClick={() => {
-                      this.props.onLocaleChange(this.props.locale !== 'en' ? 'en' : 'de');
+                      // this.props.onLocaleChange(this.props.locale !== 'en' ? 'en' : 'de');
                     }}
                   />
                 </div>

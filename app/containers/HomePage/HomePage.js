@@ -24,6 +24,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
         </Helmet>
         <section className="banner">
           <VideoBackground />
+          <div className="banner-overlay" />
           <div className="container">
             <div className="row">
               <div className="col">
@@ -190,8 +191,8 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                       <div className="col-lg-4 col-md-12">
                         <div className="card text-center shadow-sm">
                           <div className="card-body">
-                            <h5 className="card-title">Lorem Ipsum</h5>
-                            <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <h5 className="card-title">Holiday car hire</h5>
+                            <p className="card-text">Car hire has turned into a major annual chore for holidaymakers, with a bewildering array of deals on offer that appears cheap but can leave unwary customers with large bills later on.</p>
                             <a href="#" className="btn">Read Article</a>
                           </div>
                         </div>
@@ -199,8 +200,8 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                       <div className="col-lg-4 col-md-12">
                         <div className="card text-center shadow-sm">
                           <div className="card-body">
-                            <h5 className="card-title">Lorem Ipsum</h5>
-                            <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <h5 className="card-title">How to find the best rental deals</h5>
+                            <p className="card-text">Avoid the hard sell and ensure you’re not hit with rip-off charges</p>
                             <a href="#" className="btn">Read Article</a>
                           </div>
                         </div>
@@ -208,8 +209,8 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                       <div className="col-lg-4 col-md-12">
                         <div className="card text-center shadow-sm">
                           <div className="card-body">
-                            <h5 className="card-title">Lorem Ipsum</h5>
-                            <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <h5 className="card-title">You will need these (essential?) extras</h5>
+                            <p className="card-text">If you’re heading away with your family, you’ll naturally want to book child car seats if the children are young enough, but did you know that this could add upwards of £100 to your higher cost, just for one seat?!</p>
                             <a href="#" className="btn">Read Article</a>
                           </div>
                         </div>

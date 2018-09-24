@@ -32,8 +32,11 @@
         font-size: 20px;
       }
     }
-    a:hover{
-      background-color: unset;
+    a {
+      color: white;
+      &:hover{
+        background-color: unset;
+      }
     }
   }
 
@@ -58,10 +61,16 @@
         border-radius: 4px;
         transition: all 0.3s ease-in-out;
         font-weight: bold;
-        @include respond-below(sm) {
-          a {
-            font-size: 12px;
+        color: white;
+        a {
+          @include respond-below(sm) {
+            a {
+              font-size: 12px;
+            }
           }
+          &:hover {
+              color: black;
+            }
         }
       }
     }

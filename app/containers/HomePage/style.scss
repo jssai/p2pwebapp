@@ -11,7 +11,7 @@
      video {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: fill;
     }
   }
   section {
@@ -50,13 +50,21 @@
     &.banner {
       z-index: 90;
       margin: 0;
-      min-height: 500px;
+      min-height: 400px;
       height: 100vh;
-      background-color: $bg-banner;
       top: 0;
       bottom: 0;
       right: 0;
       left: 0;
+
+      .banner-overlay {
+        background-color: rgba(0,0,0,0.6);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+      }
 
       .banner-content{
         height: 100vh;
@@ -66,18 +74,22 @@
         align-items: flex-start;
         flex-direction: column;
 
+
         .banner-header{
-          color: black;
-          font-weight: bold;
-          font-size: 30px;
+          color: white;
+          font-weight: 600;
+          font-size: 36px;
+          span {
+            text-shadow: 0px 5px 15px black;
+          }
           @include respond-below(sm) {
             font-size: 26px;
           }
         }
         .application-link {
-          font-weight: bold;
-          color: black;
-          font-size: 30px;
+          font-weight: 600;
+          color: white;
+          font-size: 36px;
           margin-top: 10px;
           @include respond-below(sm) {
             font-size: 20px;
@@ -104,17 +116,25 @@
       .about-content {
         background-color: $bg-white;
         margin-top: -100px;
-        padding: 2em;
+        padding: 2em 2em 3em 2em;
         @include respond-below(sm) {
           padding: 1.5em;
         }
-        h3.about-header {
-          text-align: center;
-          margin-bottom:  2em;
-          font-weight: bold;
+        h3.content-header {
+          margin-bottom: 1em;
         }
         .about-description {
           margin: 0 20px;
+        }
+      }
+    }
+
+    &.owner {
+      @include respond-above(md) {
+        .tile {
+          .tile-header{
+             margin: 0 0.5em;
+          }
         }
       }
     }
@@ -128,7 +148,27 @@
     &.blog {
       .card {
         max-width: 300px;
+        height: 330px;
         padding: 1em 2em;
+        margin: 0 auto;
+        @include respond-below(md) {
+          height: unset;
+        }
+        .card-body {
+          display: flex;
+          flex: 1;
+          justify-content: space-between;
+          flex-direction: column;
+          align-items: center;
+          h5, p, a {
+            font-family: 'Montserrat', sans-serif;
+          }
+          .card-text {
+            flex-grow: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
         @include respond-below(md) {
           max-width: unset;
           margin: 1em;

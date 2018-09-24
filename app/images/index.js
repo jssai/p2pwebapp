@@ -20,6 +20,9 @@ import howto3 from './Icon_9.png';
 import howto4 from './Icon_10.png';
 import howto5 from './Icon_11.png';
 import howto6 from './Icon_12.png';
+import owner1 from './owner_1.png';
+import owner2 from './owner_2.png';
+import owner3 from './owner_3.png';
 // import  from './.png';
 
 export default {
@@ -42,9 +45,9 @@ export default {
     vi: impressionist
   },
   owner: {
-    i: buyer,
-    ii: mover,
-    iii: impressionist
+    i: owner1,
+    ii: owner2,
+    iii: owner3
   },
   howto: {
     i: howto1,

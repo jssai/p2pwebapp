@@ -1,0 +1,8 @@
+@import 'styles/mixins.scss';
+
+.scrollToTop {
+  background-color: $bg-banner;
+  border-radius: 50%;
+  padding: 10px 12px;
+  color: white;
+}
