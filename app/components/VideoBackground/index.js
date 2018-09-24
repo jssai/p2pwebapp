@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
+import videoFile from 'video/video_banner.mp4';
 
 class VideoBackground extends Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <div className="video-container">
-        <video
-          src="//download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4"
-          autoPlay
-          loop
-        />
+        <video autoPlay loop>
+          <source src={videoFile} type="video/mp4" />
+        </video>
       </div>
     );
   }

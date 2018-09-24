@@ -10,7 +10,7 @@ import { FormattedMessage } from 'react-intl';
 import Images from 'images';
 import Accordion from 'components/Accordion';
 import Tile from 'components/Tile';
-// import VideoBackground from 'components/VideoBackground';
+import VideoBackground from 'components/VideoBackground';
 import messages from './messages';
 import './style.scss';
 
@@ -23,7 +23,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
           <meta name="description" content="Car Shearing website homepage" />
         </Helmet>
         <section className="banner">
-          {/* <VideoBackground /> */}
+          <VideoBackground />
           <div className="container">
             <div className="row">
               <div className="col">
