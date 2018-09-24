@@ -200,7 +200,7 @@ export default defineMessages({
         },
         answer: {
           id: 'home.faq.one.ans',
-          defaultMessage: 'lorem ipsum....'
+          defaultMessage: 'You will rent cars from local car owners around you. We have a car registration process that users go through before they can rent out their cars on CarShearing.com'
         }
       },
       two: {
@@ -210,7 +210,7 @@ export default defineMessages({
         },
         answer: {
           id: 'home.faq.two.ans',
-          defaultMessage: 'lorem ipsum....'
+          defaultMessage: 'Our insurance cover policy is made such that you are protected if your car is damaged by the driver or third-party during a car rental. In the event of an accident, the driver pays the repair costs up to the amount of the insurance excess, and the insurer pays the rest.'
         }
       },
       three: {
@@ -220,37 +220,37 @@ export default defineMessages({
         },
         answer: {
           id: 'home.faq.three.ans',
-          defaultMessage: 'lorem ipsum....'
+          defaultMessage: 'You can really rent a car for as long as it has been made available by the owner. Let’s say the owner has marked his car available for 2 days. You will be able to book for the two days successfully.'
         }
       },
       four: {
         title: {
           id: 'home.faq.four.que',
-          defaultMessage: 'Is there such a thing as a Green Sheep?'
+          defaultMessage: 'Can I list any car to rent out?'
         },
         answer: {
           id: 'home.faq.four.ans',
-          defaultMessage: 'lorem ipsum....'
+          defaultMessage: 'As far as model and brand goes, you are free to register your car with Carshearing.com. However, we do not compromise on safety, car equipment and cleanliness. If you think your car is not safe to drive or does not have working equipment, then you should decline rental requests.'
         }
       },
       five: {
         title: {
           id: 'home.faq.five.que',
-          defaultMessage: 'Can I list any car to rent out?'
+          defaultMessage: 'How much money can I make from my car?'
         },
         answer: {
           id: 'home.faq.five.ans',
-          defaultMessage: 'lorem ipsum....'
+          defaultMessage: 'You will be setting a price for your car’s rental. This price will be applied per A fair price is one that is consistent with the age and model of your car, as well as the time of year and the level of demand. If you are a new owner, start with a fairly low price to make it easier to get your first rentals and earn some positive reviews.'
         }
       },
       six: {
         title: {
           id: 'home.faq.six.que',
-          defaultMessage: 'How much money can I make from my car?'
+          defaultMessage: 'Is there such a thing as a Green Sheep?'
         },
         answer: {
           id: 'home.faq.six.ans',
-          defaultMessage: 'lorem ipsum....'
+          defaultMessage: " "
         }
       }
     }

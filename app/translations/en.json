@@ -50,17 +50,17 @@
   
   "home.faq": "Really FAQs",
   "home.faq.one.que": "Who am I renting the car from?",
-  "home.faq.one.ans": "lorem ipsum....",
+  "home.faq.one.ans": "You will rent cars from local car owners around you. We have a car registration process that users go through before they can rent out their cars on CarShearing.com",
   "home.faq.two.que": "Do I need insurance when I rent?",
-  "home.faq.two.ans": "lorem ipsum....",
+  "home.faq.two.ans": "Our insurance cover policy is made such that you are protected if your car is damaged by the driver or third-party during a car rental. In the event of an accident, the driver pays the repair costs up to the amount of the insurance excess, and the insurer pays the rest.",
   "home.faq.three.que": "How long can I rent for?",
-  "home.faq.three.ans": "lorem ipsum....",
-  "home.faq.four.que": "Is there such a thing as a Green Sheep?",
-  "home.faq.four.ans": "lorem ipsum....",
-  "home.faq.five.que": "Can I list any car to rent out?",
-  "home.faq.five.ans": "lorem ipsum....",
-  "home.faq.six.que": "How much money can I make from my car?",
-  "home.faq.six.ans": "lorem ipsum....",
+  "home.faq.three.ans": "You can really rent a car for as long as it has been made available by the owner. Let’s say the owner has marked his car available for 2 days. You will be able to book for the two days successfully.",
+  "home.faq.four.que": "Can I list any car to rent out?",
+  "home.faq.four.ans": "As far as model and brand goes, you are free to register your car with Carshearing.com. However, we do not compromise on safety, car equipment and cleanliness. If you think your car is not safe to drive or does not have working equipment, then you should decline rental requests.",
+  "home.faq.five.que": "How much money can I make from my car?",
+  "home.faq.five.ans": "You will be setting a price for your car’s rental. This price will be applied per A fair price is one that is consistent with the age and model of your car, as well as the time of year and the level of demand. If you are a new owner, start with a fairly low price to make it easier to get your first rentals and earn some positive reviews.",
+  "home.faq.six.que": "Is there such a thing as a Green Sheep?",
+  "home.faq.six.ans": " ",
 
   "app.footer.copyright": "Copyright© 2018 CarShearing"
 }
