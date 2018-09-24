@@ -10,3 +10,7 @@ npm-debug.log
 
 # Logs
 yarn-error.log
+
+
+#firebase
+.firebase
