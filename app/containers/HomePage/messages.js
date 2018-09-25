@@ -250,7 +250,7 @@ export default defineMessages({
         },
         answer: {
           id: 'home.faq.six.ans',
-          defaultMessage: " "
+          defaultMessage: 'yes, there is.'
         }
       }
     }
