@@ -3,11 +3,11 @@ import { defineMessages } from 'react-intl';
 export default defineMessages({
   rentRide: {
     id: 'home.banner.RentRide',
-    defaultMessage: 'Rent a ride'
+    defaultMessage: 'Rent a better ride'
   },
   forLess: {
     id: 'home.banner.forLess',
-    defaultMessage: 'For Less £'
+    defaultMessage: 'For Less $£€'
   },
   withLess: {
     id: 'home.banner.withLess',
@@ -31,11 +31,15 @@ export default defineMessages({
   },
   abloutLineThree: {
     id: 'home.about.lineThree',
-    defaultMessage: 'Peer to peer which simply means that any person with a car (that is registered and has taxes paid up etc) can rent that car to someone else (as long as they have a valid drivers licence).'
+    defaultMessage: 'Peer to peer car rental which simply means that any person with a car (that is registered and has taxes paid up etc) can rent that car to someone else (as long as they have a valid drivers licence).'
   },
   abloutLineFour: {
     id: 'home.about.lineFour',
     defaultMessage: 'That’s right… each of us can now start to earn money simply by renting out cars sitting idle while we are on {sun} {umbrella} holiday {plane} or {laptop} working.'
+  },
+  abloutLineFive: {
+    id: 'home.about.lineFive',
+    defaultMessage: 'Finally the world the way it should be.'
   },
   asrenter: {
     title: {
@@ -250,7 +254,7 @@ export default defineMessages({
         },
         answer: {
           id: 'home.faq.six.ans',
-          defaultMessage: 'yes, there is.'
+          defaultMessage: 'There is, if you count our logo!'
         }
       }
     }

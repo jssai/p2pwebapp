@@ -31,10 +31,12 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                 <div className="banner-content">
                   <div className="banner-header">
                     <FormattedMessage {...messages.rentRide} />
+                    <img src={Images.world} alt="world" />
                     <br />
                     <FormattedMessage {...messages.forLess} />
                     <br />
                     <FormattedMessage {...messages.withLess} />
+                    <img src={Images.mother} alt="mother" />
                     <img src={Images.world} alt="world" />
                   </div>
                   <br />
@@ -65,17 +67,28 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                     <img className="pl-1" src={Images.redCar} alt="red car" />
                     <br />
                     <br />
-                    <FormattedMessage {...messages.abloutLineThree} />
+                    <FormattedMessage
+                      {...messages.abloutLineThree}
+                      values={{
+                        carA: <img src={Images.car.a} alt="car small" />,
+                        carB: <img src={Images.car.b} alt="car medium" />,
+                        carC: <img src={Images.car.c} alt="car big" />
+                      }}
+                    />
                     <br />
                     <FormattedMessage
                       {...messages.abloutLineFour}
                       values={{
+                        car: <img src={Images.car.d} alt="car" />,
                         sun: <img src={Images.sun} alt="sun" />,
                         umbrella: <img src={Images.umbrella} alt="umbrella" />,
                         plane: <img src={Images.plane} alt="plane" />,
                         laptop: <img src={Images.laptop} alt="laptop" />
                       }}
                     />
+                    <br />
+                    <br />
+                    <FormattedMessage {...messages.abloutLineFive} />
                   </h5>
                 </div>
               </div>

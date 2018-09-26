@@ -25,6 +25,10 @@ const messages = defineMessages({
   copyright: {
     id: 'app.footer.copyright',
     defaultMessage: 'Copyright© 2018 CarShearing'
+  },
+  join: {
+    id: 'joinList',
+    defaultMessage: 'Join Waiting List'
   }
 });
 
@@ -38,11 +42,15 @@ class Footer extends React.Component { // eslint-disable-line react/prefer-state
               <div className="content">
                 <div className="logo">
                   <a href="/">
-                    <FormattedMessage {...messages.logo} />
+                    <img
+                      src={Images.logoBlack}
+                      className="logoImage"
+                      alt="logo"
+                    />
                   </a>
                 </div>
                 <ul className="menu">
-                  <li>
+                  {/* <li>
                     <div className="SelectLanguage">
                       <img
                         src={Images.flag}
@@ -58,6 +66,9 @@ class Footer extends React.Component { // eslint-disable-line react/prefer-state
                   </li>
                   <li>
                     <a><FormattedMessage {...messages.signin} /></a>
+                  </li> */}
+                  <li>
+                    <a><FormattedMessage {...messages.join} /></a>
                   </li>
                 </ul>
               </div>
@@ -68,9 +79,9 @@ class Footer extends React.Component { // eslint-disable-line react/prefer-state
           </div>
         </div>
       </footer>
-    )
+    );
   }
-};
+}
 
 Footer.propTypes = {
   locale: PropTypes.string,

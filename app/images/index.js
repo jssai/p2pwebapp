@@ -1,6 +1,9 @@
+import logo from './logo.png';
+import logoBlack from './logo_black.png';
 import android from './GooglePlay.png';
 import ios from './AppStore.png';
 import world from './World.png';
+import mother from './Mother.png';
 import flag from './UK.png';
 import smiley from './Smiley.png';
 import redCar from './Car.png';
@@ -23,12 +26,19 @@ import howto6 from './Icon_12.png';
 import owner1 from './owner_1.png';
 import owner2 from './owner_2.png';
 import owner3 from './owner_3.png';
+import carA from './Car_a.png';
+import carB from './Car_b.png';
+import carC from './Car_c.png';
+import carD from './Car_d.png';
 // import  from './.png';
 
 export default {
+  logo,
+  logoBlack,
   android,
   ios,
   world,
+  mother,
   flag,
   smiley,
   redCar,
@@ -36,6 +46,12 @@ export default {
   umbrella,
   plane,
   laptop,
+  car: {
+    a: carA,
+    b: carB,
+    c: carC,
+    d: carD
+  },
   renter: {
     i: family,
     ii: callWild,

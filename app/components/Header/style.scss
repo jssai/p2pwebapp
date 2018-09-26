@@ -1,5 +1,13 @@
 @import 'styles/mixins.scss';
 
+.logoImage {
+  max-width: 200px;
+  @include respond-below(xs) {
+    margin-top: 0;
+    max-width: 140px;
+  }
+}
+
 .header {
     position: absolute;
     min-height: 70px;
@@ -23,11 +31,10 @@
   }
 
   .logo {
-    flex: 5;
     font-weight: bold;
     @include respond-below(sm) {
-      flex: 1;
-      margin: 1em;
+      margin: 0em;
+      margin-bottom: 1em;
       a {
         font-size: 20px;
       }

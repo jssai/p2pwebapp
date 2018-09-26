@@ -84,6 +84,15 @@
           }
           @include respond-below(sm) {
             font-size: 26px;
+            img {
+              height: 40px;
+            }
+          }
+          @include respond-below(xs) {
+            font-size: 22px;
+            img {
+              height: 30px;
+            }
           }
         }
         .application-link {
@@ -100,6 +109,12 @@
             img {
               margin-left: 0;
               margin-right: 10px;
+              margin-top: 5px;
+            }
+          }
+          @include respond-below(xs) {
+            img{
+              max-width: 100px;
             }
           }
         }
@@ -119,6 +134,9 @@
         padding: 2em 2em 3em 2em;
         @include respond-below(sm) {
           padding: 1.5em;
+        }
+        @include respond-below(xs) {
+          padding: 1.5em 0em;
         }
         h3.content-header {
           margin-bottom: 1em;

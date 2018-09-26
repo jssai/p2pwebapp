@@ -28,6 +28,10 @@ const messages = defineMessages({
   faq: {
     id: 'faqThis',
     defaultMessage: 'FAQ This!'
+  },
+  join: {
+    id: 'joinList',
+    defaultMessage: 'Join Waiting List'
   }
 });
 
@@ -40,6 +44,10 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
       duration: 1000
     });
   }
+  openModal = () => {
+    // alert('lol');
+  }
+
   render() {
     return (
       <header className="header">
@@ -47,12 +55,16 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
         <div className="container">
           <div className="logo">
             <a href="/">
-              <FormattedMessage {...messages.logo} />
+              <img
+                src={Images.logo}
+                className="logoImage"
+                alt="logo"
+              />
             </a>
           </div>
           <nav className="navbar-menu">
             <ul>
-              <li>
+              {/* <li>
                 <div className="SelectLanguage">
                   <img
                     src={Images.flag}
@@ -68,6 +80,9 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
               </li>
               <li>
                 <a><FormattedMessage {...messages.signin} /></a>
+              </li> */}
+              <li>
+                <a role="link" onClick={this.openModal}><FormattedMessage {...messages.join} /></a>
               </li>
               <li>
                 <a role="link" onClick={this.goToFaq}><FormattedMessage {...messages.faq} /></a>
