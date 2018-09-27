@@ -7,6 +7,14 @@
     max-width: 140px;
   }
 }
+.modal-open {
+  .header {
+    padding-right: 15px;
+    @include respond-below(sm) {
+      padding-right: unset;
+    }
+  }
+}
 
 .header {
     position: absolute;

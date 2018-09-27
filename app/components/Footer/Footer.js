@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { FormattedMessage, defineMessages } from 'react-intl';
 import { createSelector } from 'reselect';
+import JoinList from 'components/JoinList';
 import { changeLocale } from 'containers/LanguageProvider/actions';
 import { makeSelectLocale } from 'containers/LanguageProvider/selectors';
 import Images from 'images';
@@ -25,10 +26,6 @@ const messages = defineMessages({
   copyright: {
     id: 'app.footer.copyright',
     defaultMessage: 'Copyright© 2018 CarShearing'
-  },
-  join: {
-    id: 'joinList',
-    defaultMessage: 'Join Waiting List'
   }
 });
 
@@ -67,9 +64,7 @@ class Footer extends React.Component { // eslint-disable-line react/prefer-state
                   <li>
                     <a><FormattedMessage {...messages.signin} /></a>
                   </li> */}
-                  <li>
-                    <a><FormattedMessage {...messages.join} /></a>
-                  </li>
+                  <JoinList />
                 </ul>
               </div>
               <div className="copyright">
