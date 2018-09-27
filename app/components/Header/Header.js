@@ -5,6 +5,7 @@ import Images from 'images';
 import scrollToElement from 'scroll-to-element';
 import { connect } from 'react-redux';
 import ScrollToTop from 'components/ScrollToTop';
+import JoinList from 'components/JoinList';
 import { createSelector } from 'reselect';
 import { changeLocale } from 'containers/LanguageProvider/actions';
 import { makeSelectLocale } from 'containers/LanguageProvider/selectors';
@@ -44,9 +45,6 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
       duration: 1000
     });
   }
-  openModal = () => {
-    // alert('lol');
-  }
 
   render() {
     return (
@@ -81,9 +79,7 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
               <li>
                 <a><FormattedMessage {...messages.signin} /></a>
               </li> */}
-              <li>
-                <a role="link" onClick={this.openModal}><FormattedMessage {...messages.join} /></a>
-              </li>
+              <JoinList />
               <li>
                 <a role="link" onClick={this.goToFaq}><FormattedMessage {...messages.faq} /></a>
               </li>

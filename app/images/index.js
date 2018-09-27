@@ -1,22 +1,30 @@
 import logo from './logo.png';
 import logoBlack from './logo_black.png';
+
 import android from './GooglePlay.png';
 import ios from './AppStore.png';
+
 import world from './World.png';
 import mother from './Mother.png';
 import flag from './UK.png';
+import dollar from './Dollar.png';
+import pound from './Pound.png';
+
 import smiley from './Smiley.png';
 import redCar from './Car.png';
+import carBig from './Car_big.png';
 import sun from './Sun.png';
 import umbrella from './Umb.png';
 import plane from './Plane.png';
 import laptop from './Laptop.png';
+
 import family from './Icon_1.png';
 import callWild from './Icon_2.png';
 import roadTrip from './Icon_3.png';
 import buyer from './Icon_4.png';
 import mover from './Icon_5.png';
 import impressionist from './Icon_6.png';
+
 import howto1 from './Icon_7.png';
 import howto2 from './Icon_8.png';
 import howto3 from './Icon_9.png';
@@ -37,11 +45,14 @@ export default {
   logoBlack,
   android,
   ios,
+  dollar,
+  pound,
   world,
   mother,
   flag,
   smiley,
   redCar,
+  carBig,
   sun,
   umbrella,
   plane,

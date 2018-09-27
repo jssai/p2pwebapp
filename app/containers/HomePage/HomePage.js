@@ -31,9 +31,11 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                 <div className="banner-content">
                   <div className="banner-header">
                     <FormattedMessage {...messages.rentRide} />
-                    <img src={Images.world} alt="world" />
+                    <img className="car" src={Images.carBig} alt="car" />
                     <br />
                     <FormattedMessage {...messages.forLess} />
+                    <img className="money" src={Images.pound} alt="pound" />
+                    <img className="money" src={Images.dollar} alt="dollar" />
                     <br />
                     <FormattedMessage {...messages.withLess} />
                     <img src={Images.mother} alt="mother" />
