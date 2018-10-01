@@ -79,7 +79,7 @@
         color: white;
         a {
           @include respond-below(xs) {
-            padding: 0 5px;
+            padding: 5px;
           }
           @include respond-below(sm) {
             a {

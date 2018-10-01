@@ -1,0 +1,18 @@
+@import './mixins.scss';
+
+// to disable the default icon
+.modal-open {
+    #toast-container {
+        padding-right: 15px;    
+    }
+}
+#toast-container {
+    .toast {
+        opacity: 1;
+        background-image: none !important;
+        padding: 15px;
+        @include respond-below(xs) {
+          padding: 8px;
+        }
+    } 
+}

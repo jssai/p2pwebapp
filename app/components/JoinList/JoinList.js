@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
 import { FormattedMessage, defineMessages } from 'react-intl';
 import { Modal } from 'react-bootstrap';
+import Toastr from 'components/Toastr';
+import API from 'api';
 import './style.scss';
 
 // default messages
@@ -26,12 +28,28 @@ class JoinList extends React.Component {
   }
 
   closeModal = () => {
-    this.setState({ modalIsOpen: false })
+    this.setState({ modalIsOpen: false });
   }
 
   handleSubmit = (event) => {
-    console.log('submit');
     event.preventDefault();
+    API.get('https://jsonplaceholder.typicode.com/todos/1')
+      .then(({ status, data }) => {
+        if (status === 200) {
+          this.closeModal();
+          Toastr.success(data.result);
+          this.setState({
+            name: '',
+            mail: ''
+          });
+        }
+      }).catch((err) => {
+        if (err && err.status === 400) {
+          Toastr.info(err.result);
+        } else {
+          console.log(err);
+        }
+      });
   }
 
   handleChange = (value) => {
@@ -64,7 +82,7 @@ class JoinList extends React.Component {
                       aria-describedby="name"
                       placeholder="Name"
                       value={this.state.name}
-                      onChange={(e) => this.handleChange({name: e.target.value}) }
+                      onChange={(e) => this.handleChange({ name: e.target.value })}
                     />
                   </div>
                   <div className="form-group">
@@ -75,10 +93,10 @@ class JoinList extends React.Component {
                       aria-describedby="email"
                       placeholder="Email"
                       value={this.state.mail}
-                      onChange={(e) => this.handleChange({mail: e.target.value}) }
+                      onChange={(e) => this.handleChange({ mail: e.target.value })}
                     />
                   </div>
-                  <button type="submit" class="btn btn-sm btn-block">Submit</button>
+                  <button type="submit" className="btn btn-sm btn-block">Submit</button>
                 </form>
               </div>
             </div>

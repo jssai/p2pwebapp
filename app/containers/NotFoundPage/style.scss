@@ -1,6 +1,25 @@
-.not-found-page {
-  h1 {
-    font-size: 2em;
-    margin-bottom: 0.25em;
+@import 'styles/mixins.scss';
+
+#app {
+  display: flex;
+  flex-direction: column;
+  .header, footer, article {
+    position: relative;
+  }
+  .header{
+    background-color: rgba(0,0,0,0.6);
+  }
+  .not-found-page {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.6);
+    h2 {
+      font-size: 2em;
+      font-style: italic;
+      font-weight: 500;
+      color: white;
+     }
   }
 }
