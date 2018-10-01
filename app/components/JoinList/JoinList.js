@@ -33,23 +33,33 @@ class JoinList extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    API.get('https://jsonplaceholder.typicode.com/todos/1')
-      .then(({ status, data }) => {
-        if (status === 200) {
-          this.closeModal();
-          Toastr.success(data.result);
-          this.setState({
-            name: '',
-            mail: ''
-          });
-        }
-      }).catch((err) => {
-        if (err && err.status === 400) {
-          Toastr.info(err.result);
-        } else {
-          console.log(err);
-        }
+    if (Math.random() > 0.5) {
+      this.closeModal();
+      Toastr.success('You have been added to the waiting list');
+      this.setState({
+        name: '',
+        mail: ''
       });
+    } else {
+      Toastr.error('Car went wrong..!');
+    }
+    // API.get('https://jsonplaceholder.typicode.com/todos/1')
+    //   .then(({ status, data }) => {
+    //     if (status === 200) {
+    //       this.closeModal();
+    //       Toastr.error('You have been added to the waiting list');
+    //       this.setState({
+    //         name: '',
+    //         mail: ''
+    //       });
+    //     }
+    //   }).catch((err) => {
+    //     if (err && err.status === 400) {
+    //       Toastr.error(err.result);
+    //     } else {
+    //       console.log(err);
+    //     }
+    //   });
   }
 
   handleChange = (value) => {

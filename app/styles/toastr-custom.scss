@@ -14,5 +14,25 @@
         @include respond-below(xs) {
           padding: 8px;
         }
-    } 
+    }
+    .toast {
+      background-color: #030303;
+    }
+    .toast-close-button {
+      color: inherit;
+    }
+    .toast-error {
+      background-color: $te-bg;
+      color: $te-text;
+    }
+    .toast-info {
+      background-color: #2F96B4;
+    }
+    .toast-warning {
+      background-color: #F89406;
+    }
+    .toast-success {
+        background-color: $ts-bg;
+        color: $ts-text;
+    }
 }
